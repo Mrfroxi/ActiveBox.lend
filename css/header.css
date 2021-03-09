@@ -1,5 +1,16 @@
-.bodir {
-  width: 100px;
-  height: 200px;
+.header_main {
+  width: 100%;
+  height: 1600px;
   background-color: red;
+  background-image: url(/img/first_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header_main::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }

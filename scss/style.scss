@@ -9,4 +9,16 @@
     margin: auto ;
     padding: 0 15px;
 }
-html { overflow-x: hidden; }
+html { 
+	overflow-x: hidden; 
+}
+$white:#ffffff;
+$dark: #2d3033;
+$red: #e84545;
+$grey:#808080;
+
+
+
+
+@import "header.scss";
+@import "button.scss";

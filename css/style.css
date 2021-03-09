@@ -14,3 +14,123 @@
 html {
   overflow-x: hidden;
 }
+
+.header_main {
+  width: 100%;
+}
+.header_main::after {
+  width: 100%;
+  height: 750px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url(../img/first_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header_content {
+  position: relative;
+  z-index: 1;
+}
+
+.header_inner {
+  padding: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  max-width: 1170px;
+  margin-bottom: 160px;
+}
+
+.header_logo {
+  max-width: 189px;
+  height: 24px;
+}
+
+.ul_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ul_head li {
+  margin: 11px;
+  opacity: 0.74;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav_head {
+  max-width: 600px;
+}
+
+.header_text {
+  font-family: "OpenSans", sans-serif;
+  font-size: 65px;
+  line-height: 71px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  max-width: 910px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.header_mintext {
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #ffffff;
+  max-width: 818px;
+  text-align: center;
+  margin: 0 auto 74px;
+}
+
+.header_btn {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  color: white;
+  font-size: 14px;
+  background: #383d48;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.header_btn:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  right: 0;
+  background: linear-gradient(225deg, #BEFDE6 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+  box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+}
+.header_btn:hover:before {
+  width: 20px;
+  height: 20px;
+}
+
+.header_btn {
+  max-width: 185px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
