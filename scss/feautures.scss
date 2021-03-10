@@ -5,8 +5,11 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $dark;
+    margin-bottom: 25px;
  }
  .feautures_text{
+    margin: 0 auto;
+    max-width: 314px;
     font-family: "Raleway",sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -14,7 +17,23 @@
     color: $fttext;
 }
 
-.feautures_bord{
+.feautures_part{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 -15px;
+}
+.feautures_bord{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 15px;
+}
+.feautures_img{
+    font-size: 34px;
+    color: $red;
+    margin-bottom: 38px;
+}
+.up_img{
+    margin-bottom: 75px;
 }

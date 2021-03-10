@@ -1,0 +1,6 @@
+.footer_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #3a3e64;
+}
