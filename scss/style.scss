@@ -16,9 +16,13 @@ $white:#ffffff;
 $dark: #2d3033;
 $red: #e84545;
 $grey:#808080;
-
+$fttext:#6c7279;
+section{
+	padding:  140px ;
+}
 
 
 
 @import "header.scss";
 @import "button.scss";
+@import "feautures.scss";

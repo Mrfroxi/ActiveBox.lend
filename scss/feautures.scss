@@ -1,0 +1,20 @@
+.feautures_maintext{
+    font-family:"Raleway",sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $dark;
+ }
+ .feautures_text{
+    font-family: "Raleway",sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $fttext;
+}
+
+.feautures_bord{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
