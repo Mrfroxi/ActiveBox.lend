@@ -40,7 +40,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    li{
+    li a{
     margin: 11px;
     opacity: 0.74;
     font-family: "Raleway",sans-serif;
@@ -49,6 +49,7 @@
     font-weight: 700;
     text-transform: uppercase;
     color:$white;
+    text-decoration: none;
     }
 }
 .nav_head{
@@ -56,7 +57,7 @@
 }
 .header_text{
     font-family: "OpenSans",sans-serif;
-    font-size: 65px;
+    font-size: calc(30px + 35 * ((100vw - 320px) / (1900 - 320)));
     line-height: 71px;
     font-weight: 700;
     text-transform: uppercase;
@@ -75,4 +76,40 @@
     max-width: 818px;
     text-align: center;
     margin: 0 auto 74px ;
+}
+.header__butger{
+    display: none;
+}
+@media(max-width:767px){
+    .header__butger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        span{
+            position: absolute;
+            background-color: #fff;
+            left: 0;
+            width: 100%;
+            height: 2px;
+        }
+
+        &::before,
+        &::after
+        {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+
+        }
+        &::before{
+            top: 0;
+        }
+        &::after{
+            bottom: 0;
+        }
+    }
 }

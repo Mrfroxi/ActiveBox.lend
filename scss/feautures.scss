@@ -37,3 +37,13 @@
 .up_img{
     margin-bottom: 75px;
 }
+
+
+@media(max-width:767px){
+    .feautures_part{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .up_imgsc{
+        margin-bottom: 75px;
+    }
+}

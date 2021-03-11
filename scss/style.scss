@@ -20,10 +20,27 @@ $fttext:#6c7279;
 section{
 	padding:  140px ;
 }
+@media (max-width:1200px){
+	.container{
+		max-width: 970px;
+	}
+}
+@media (max-width:992px){
+	.container{
+		max-width: 750px;
+	}
+}
+@media (max-width:767px){
+	.container{
+		max-width: 90%;
+	}
 
+}
 
 
 @import "header.scss";
 @import "button.scss";
 @import "feautures.scss";
 @import "footer.scss";
+@import "download_part.scss";
+@import "main_dudes.scss";
