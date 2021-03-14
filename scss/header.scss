@@ -71,8 +71,10 @@ header{
 @media(max-width:767px){
     body.lock{
         overflow-y:hidden;
+        max-height: 100vh;
     }
     .menu{
+        overflow: auto;
         transition: all 0.3s ease 0s;
         max-width: 100%;
         position:fixed ;

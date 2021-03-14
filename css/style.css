@@ -114,9 +114,11 @@ header {
 @media (max-width: 767px) {
   body.lock {
     overflow-y: hidden;
+    max-height: 100vh;
   }
 
   .menu {
+    overflow: auto;
     transition: all 0.3s ease 0s;
     max-width: 100%;
     position: fixed;
@@ -514,4 +516,81 @@ header {
 }
 .man_socialnetwork a i {
   color: #c6cacc;
+}
+
+.archive {
+  padding: 140px 0;
+}
+
+.archive {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.paroject_think {
+  border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.project_img {
+  width: 100%;
+  display: block;
+}
+
+.main_titlewr, .main_textwr {
+  display: none;
+  position: absolute;
+}
+
+.paroject_think::before {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  background-color: rgba(232, 69, 69, 0.9);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.paroject_think:hover {
+  transition: 0.3s ease-in;
+  position: relative;
+}
+.paroject_think:hover::before {
+  display: block;
+  transition: 0.3s ease-in;
+  transform: scale(1);
+  width: 100%;
+  height: 100%;
+}
+.paroject_think:hover .main_textwr {
+  display: block;
+  left: 38%;
+  top: 50%;
+  text-align: center;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+}
+.paroject_think:hover .main_titlewr {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  top: 40%;
+  left: 41%;
+  z-index: 1;
+  display: block;
 }
