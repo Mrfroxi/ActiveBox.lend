@@ -596,3 +596,41 @@ header {
   z-index: 1;
   display: block;
 }
+
+.slider-container {
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.slider-track {
+  display: flex;
+  transition: 0.2s;
+}
+
+.slider-item {
+  height: 500px;
+  width: 200px;
+  background-color: aqua;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 600px;
+  padding: 140px 0;
+}
+
+.slider-item:nth-child(3n+1) {
+  background-color: red;
+}
+
+.slider-item:nth-child(3n+2) {
+  background-color: #4c00ff;
+}
+
+.slider-item:nth-child(3n+3) {
+  background-color: forestgreen;
+}
+
+.slider-buttons {
+  text-align: center;
+}

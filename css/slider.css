@@ -1,0 +1,32 @@
+.slider-container {
+  overflow: hidden;
+  background-color: aqua;
+}
+
+.slider-track {
+  display: flex;
+  transition: 0.2s;
+}
+
+.slider-item {
+  height: 500px;
+  width: 200px;
+  background-color: aqua;
+}
+
+.wrapper {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.slider-item:nth-child(3n+1) {
+  background-color: red;
+}
+
+.slider-item:nth-child(3n+2) {
+  background-color: #4c00ff;
+}
+
+.slider-item:nth-child(3n+3) {
+  background-color: forestgreen;
+}

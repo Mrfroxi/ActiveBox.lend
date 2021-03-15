@@ -4,3 +4,50 @@ document.querySelector('.burger').addEventListener('click', function(){
     document.getElementsByTagName('body')[0].classList.toggle("lock");
   })
   document.querySelector('.menu').classList.toggle("animate");
+
+// slider
+let position = 0 ;
+const slidesToShow = 3;
+const slidesToScroll = 1;
+const container = document.querySelector('.slider-container');
+const track = document.querySelector(".slider-track");
+const btnPrev = document.querySelector(".btn-prev");
+const btnNextr = document.querySelector(".btn-next");
+const items = document.querySelectorAll('.slider-item');
+const itemsCount = items.length;
+const itemWidth = container.clientWidth / slidesToShow;
+const movePosition = slidesToScroll * itemWidth;
+
+items.forEach((item) =>{
+  item.style.minWidth = `${itemWidth}px`
+});
+
+btnNextr.addEventListener('click' , () => {
+
+  const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
+
+  position -= itemsLeft >= slidesToScroll ? movePosition : itemsLeft * itemWidth;
+
+  setPosition();
+  checkBtns();
+})
+
+btnNextr.addEventListener('click' , () => {
+  const itemsLeft = Math.abs(position) /itemWidth;
+
+  position += itemsLeft >=slidesToScroll ? movePosition : itemsLeft*itemWidth;
+
+  setPosition();
+  checkBtns();
+})
+
+const setPosition = () => {
+  track.style.transform = `translateX(${position}px)`
+};
+
+const checkBtns = () => {
+  btnPrev.disabled = position === 0;
+  btnNextr.disabled = position <= -(itemsCount - slidesToShow) * itemWidth; 
+}
+
+checkBtns();
