@@ -609,14 +609,14 @@ header {
 
 .slider-item {
   height: 500px;
-  width: 200px;
+  width: 100%;
   background-color: aqua;
 }
 
 .wrapper {
-  margin: 0 auto;
-  width: 600px;
+  width: 100%;
   padding: 140px 0;
+  position: relative;
 }
 
 .slider-item:nth-child(3n+1) {
@@ -633,4 +633,27 @@ header {
 
 .slider-buttons {
   text-align: center;
+}
+
+.slider_maintext {
+  font-family: "Cardo", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.slaider_text {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.slider-img {
+  width: 50%;
+  height: 100%;
 }

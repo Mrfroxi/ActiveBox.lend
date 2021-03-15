@@ -10,13 +10,13 @@
 
 .slider-item {
   height: 500px;
-  width: 200px;
+  width: 100%;
   background-color: aqua;
 }
 
 .wrapper {
-  width: 600px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 140px 0;
 }
 
 .slider-item:nth-child(3n+1) {
@@ -29,4 +29,8 @@
 
 .slider-item:nth-child(3n+3) {
   background-color: forestgreen;
+}
+
+.slider-buttons {
+  text-align: center;
 }

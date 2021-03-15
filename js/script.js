@@ -7,7 +7,7 @@ document.querySelector('.burger').addEventListener('click', function(){
 
 // slider
 let position = 0 ;
-const slidesToShow = 3;
+const slidesToShow = 1;
 const slidesToScroll = 1;
 const container = document.querySelector('.slider-container');
 const track = document.querySelector(".slider-track");
@@ -32,10 +32,10 @@ btnNextr.addEventListener('click' , () => {
   checkBtns();
 })
 
-btnNextr.addEventListener('click' , () => {
+btnPrev.addEventListener('click' , () => {
   const itemsLeft = Math.abs(position) /itemWidth;
 
-  position += itemsLeft >=slidesToScroll ? movePosition : itemsLeft*itemWidth;
+  position += itemsLeft >= slidesToScroll ? movePosition : itemsLeft*itemWidth;
 
   setPosition();
   checkBtns();
