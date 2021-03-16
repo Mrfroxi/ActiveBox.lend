@@ -98,13 +98,13 @@
         display: flex;
         width: 896px;
         position: relative;
-        left: -187px;
+        left:-77;
         transition: all ease 3s;
-    
-    & img{
+    }
+    #polosa img{
         float:left
     }
-    &::after{
+    #polosa::after{
         content: "";
         display: block;
         clear: both;
@@ -116,3 +116,20 @@
         width: 480px;
     }
 }
+.slider-buttons{
+    position: absolute;
+    left: 73%;
+    top: 70%;
+    button{
+        background-color: rgb(150, 56, 238);
+       padding: 12px 20px;
+       border-radius: 25%;
+       outline: none;
+       font-family:"Raleway",sans-serif; ;
+        &:hover{
+            color: chartreuse;
+            transition: 0.3s;
+            border: 1px solid $red ;
+        }
+    }
+    }

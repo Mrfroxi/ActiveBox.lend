@@ -22,12 +22,15 @@ header{
     margin-bottom: 30px;
 }
 
-
 .ul_head{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     li a{
+      &:hover{
+        color:$red;
+        transition: 0.5s; 
+      }
     margin: 11px;
     opacity: 0.74;
     font-family: "Raleway",sans-serif;

@@ -77,6 +77,10 @@ header {
   color: #ffffff;
   text-decoration: none;
 }
+.ul_head li a:hover {
+  color: #e84545;
+  transition: 0.5s;
+}
 
 .nav_head {
   max-width: 600px;
@@ -443,6 +447,11 @@ header {
     padding: 0px;
   }
 }
+.i_br:hover {
+  background-color: #e84545;
+  transition: 0.3s;
+}
+
 .download_text {
   font-family: "Raleway", sans-serif;
   color: #2d3033;
@@ -657,7 +666,7 @@ header {
     display: flex;
     width: 896px;
     position: relative;
-    left: -77px;
+    left: -77;
     transition: all ease 3s;
   }
 
@@ -679,6 +688,24 @@ header {
     width: 480px;
   }
 }
+.slider-buttons {
+  position: absolute;
+  left: 73%;
+  top: 70%;
+}
+.slider-buttons button {
+  background-color: #9638ee;
+  padding: 12px 20px;
+  border-radius: 25%;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+}
+.slider-buttons button:hover {
+  color: chartreuse;
+  transition: 0.3s;
+  border: 1px solid #e84545;
+}
+
 .slider-container {
   overflow: hidden;
 }
