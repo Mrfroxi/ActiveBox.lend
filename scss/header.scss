@@ -162,3 +162,12 @@ header{
   .header__burger span.active{
     background: rgba(255, 255, 255, 0); 
   }
+  @media(max-width:678px){
+    .header_mintext{
+      font-size: 15px;
+
+    }
+    .header_text {
+      font-size: 29px;
+    }
+  }

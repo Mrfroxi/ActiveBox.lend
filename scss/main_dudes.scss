@@ -35,7 +35,6 @@
 }
 .man_img{
     display: block;
-    max-width: 100%;
     height:auto;
     margin-bottom: 30px;
 }
@@ -64,5 +63,12 @@
             
             color: #c6cacc;;
         }
+    }
+}
+
+@media(max-width:557px){
+    .man_text{
+        display: none;
+        color: black;
     }
 }

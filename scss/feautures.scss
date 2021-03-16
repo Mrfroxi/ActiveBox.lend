@@ -39,11 +39,22 @@
 }
 
 
-@media(max-width:767px){
+@media(max-width:864px){
     .feautures_part{
         grid-template-columns: 1fr 1fr ;
     }
     .up_imgsc{
+        margin-bottom: 75px;
+    }
+}
+@media(max-width:670px){
+    .feautures_part{
+        grid-template-columns: 1fr ;
+    }
+    .feautures{
+        padding: 70px 0;
+    }
+    .lrbord{
         margin-bottom: 75px;
     }
 }

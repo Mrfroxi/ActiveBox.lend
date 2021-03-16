@@ -97,3 +97,16 @@
         }
     }
 }
+@media(max-width:990px){
+    .footer_info{
+    flex-direction: column;
+    padding: 20px;
+    height: 400px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .footer_tw {
+        padding: 0px;
+    }
+}

@@ -51,3 +51,25 @@ const checkBtns = () => {
 }
 
 checkBtns();
+
+
+// secondslider
+
+
+autoSlider();
+var left = -77 ;
+var timer;
+
+function autoSlider() {
+  timer = setTimeout(
+    function(){
+      var polosa = document.getElementById('polosa');
+      left = left -298;
+      if(left<-3556){
+        left = 0 ;
+        clearTimeout(timer)
+      }
+      polosa.style.left = left+ 'px';
+      autoSlider();
+    },2000);
+}
